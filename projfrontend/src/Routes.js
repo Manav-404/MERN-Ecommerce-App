@@ -11,6 +11,7 @@ import AddCategory from "./admin/AddCategory";
 import AddProduct from "./admin/AddProduct";
 import ManageProducts from "./admin/ManageProducts";
 import UpdateProduct from "./admin/UpdateProduct";
+import CartPage from "./core/Cart";
 
 const Routes = () => {
 	return (
@@ -19,6 +20,7 @@ const Routes = () => {
 				<Route exact path="/" component={Home}></Route>
 				<Route exact path="/signup" component={Signup}></Route>
 				<Route exact path="/signin" component={SignIn}></Route>
+				<Route exact path="/cart" component={CartPage}></Route>
 				<PrivateRoutes
 					exact
 					path="/user/dashboard"
